@@ -8,7 +8,7 @@ ENV PYTHONIOENCODING=utf-8
 ENV DISPLAY :0
 
 LABEL maintainer="Belcour A."
-LABEL Version="0.1"
+LABEL Version="0.1.7"
 LABEL Description="Pathmodel dockerfile with Clingo (Python3.6.5) and rdkit."
 
 
