@@ -22,4 +22,4 @@ RUN conda install -c rdkit rdkit;\
     conda install -c potassco clingo;\
     echo 'export LANG="C.UTF-8"' >> ~/.bashrc
 
-RUN pip install pathmodel
+RUN pip install pathmodel==0.1.9
