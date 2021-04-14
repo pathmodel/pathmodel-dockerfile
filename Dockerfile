@@ -8,7 +8,7 @@ ENV PYTHONIOENCODING=utf-8
 ENV DISPLAY :0
 
 LABEL maintainer="Belcour A."
-LABEL Version="0.1.9"
+LABEL Version="0.2.0"
 LABEL Description="Pathmodel dockerfile with Clingo (Python3.6.5) and rdkit."
 
 
@@ -22,4 +22,4 @@ RUN conda install -c rdkit rdkit;\
     conda install -c potassco clingo;\
     echo 'export LANG="C.UTF-8"' >> ~/.bashrc
 
-RUN pip install pathmodel==0.1.9
+RUN pip install pathmodel==0.2.0
