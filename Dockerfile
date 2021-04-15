@@ -17,9 +17,7 @@ RUN apt-get update; \
 
 RUN conda update -y -n base conda
 
-RUN conda install -c rdkit rdkit;\
-    conda install -c anaconda pygraphviz;\
-    conda install -c potassco clingo;\
+RUN conda install rdkit pygraphviz clingo -c conda-forge -c potassco;\
     echo 'export LANG="C.UTF-8"' >> ~/.bashrc
 
 RUN pip install pathmodel==0.2.1
